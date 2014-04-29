@@ -1,0 +1,3 @@
+1:解压  安装DragonBonesDesignPanel.zip
+2：打开骨骼动画的fla，并打开相应的骨骼的mc，菜单》窗口》其他面板》DragonBonesDesignPanel
+3：在导出时，如果使用“Zip(XML和分开的PNG,cocos2d-x格式)”类型（事实上，对于cocos2d-x来说，只能选择这个选项），同时设置“导出缩放比”选项不为1的时候，导出的元数据文件中的坐标都没有经过缩放。
