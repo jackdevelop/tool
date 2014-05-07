@@ -1,103 +1,103 @@
-local MovementEventType =
-{
-	START = 0,
-	COMPLETE = 1,
-	LOOP_COMPLETE = 2,
-}
+local SpriteButton = require("app.base.SpriteButton");
 
 local MainScene = class("MainScene", function()
     return display.newScene("MainScene")
 end)
 
 function MainScene:ctor()
-	 display.addSpriteFramesWithFile("AllSprites.plist", "AllSprites.png")
-
-    self.animationNames = {"stand", "walk", "jump", "fall"}
+	
+	
+     
+	
+	--测试骨骼动画
+--	local BaseDragonBone = require("app.base.BaseDragonBone");
+--	local baseDragonBone = BaseDragonBone.new(nil,self);
+--	local param = {
+--		dragonName = "ccs/dragon/shop/shopEffect", --swf名称
+--		fps = 24 , --帧数
+--	}
+--	local rect = nil;
+--	baseDragonBone:initData(param);
+--	baseDragonBone:initView();
+--	baseDragonBone:registerEventScript(function()
+--		print("点击了");
+--	end,rect)
+--	baseDragonBone:setPosition(display.cx,display.cy)
+--	baseDragonBone:play("ziyuan_open") --播放的帧标签
+	 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+--	--测试cocostuiod的动画  并包含粒子
+--	CCArmatureDataManager:sharedArmatureDataManager():addArmatureFileInfo(
+--		"ccs/dragon/aniani/NewAnimationTest0.png",
+--		"ccs/dragon/aniani/NewAnimationTest0.plist",
+--		"ccs/dragon/aniani/NewAnimationTest.ExportJson"
+--	) --资源加载
+--	 local armature = CCArmature:create("NewAnimationTest") --动画的名称
+--    armature:getAnimation():play("Animation1") --播放的标签
+--	armature:setScale(0.5);
+--    armature:setPosition(ccp(display.cx,display.cy))
+--    self:addChild(armature)
     
     
-    local manager = CCArmatureDataManager:sharedArmatureDataManager()
-    manager:addArmatureFileInfo("Dragon.png", "Dragon.plist", "Dragon.xml")
-
-    self.layer = display.newLayer()
-    self:addChild(self.layer)
-
-    local button = display.newSprite("#AddCoinButton.png", display.right - 100, display.bottom + 270)
-    self:addChild(button)
-    self.addButtonBoundingBox = button:getBoundingBox()
-
-    local button = display.newSprite("#RemoveCoinButton.png", display.right - 100, display.bottom + 100)
-    self:addChild(button)
-    self.removeButtonBoundingBox = button:getBoundingBox()
-
-    self.label = ui.newBMFontLabel({
-        text = "00000",
-        font = "UIFont.fnt",
-        x = display.cx,
-        y = display.top - 40,
-    })
-    self:addChild(self.label)
-
-    self.dragons = {}
-    self.state = "IDLE"
+    
+    
+    
+    
+    	--测试动画宝石公会
+--	CCArmatureDataManager:sharedArmatureDataManager():addArmatureFileInfo(
+--		"ccs/dragon/baoshihecheng/baoshihecheng0.png",
+--		"ccs/dragon/baoshihecheng/baoshihecheng0.plist",
+--		"ccs/dragon/baoshihecheng/baoshihecheng.ExportJson"
+--	) --资源加载
+--	 local armature = CCArmature:create("baoshihecheng") --动画的名称
+--    armature:getAnimation():play("Animation1") --播放的标签
+--    armature:setPosition(ccp(400,200))
+--    self:addChild(armature)
+    
+    
+    
+    
+    
+    
+    
+    --小晕的测试宝石公户
+    CCArmatureDataManager:sharedArmatureDataManager():addArmatureFileInfo(
+		"baoshihecheng0.png",
+		"baoshihecheng0.plist",
+		"baoshihecheng.ExportJson"
+	) --资源加载
+	 local armature = CCArmature:create("baoshihecheng") --动画的名称
+    armature:getAnimation():play("Animation1") --播放的标签
+    armature:setPosition(ccp(400,200))
+    self:addChild(armature)
+    
+    
+    
+    	--测试杨云的cocostuiod的动画
+--	CCArmatureDataManager:sharedArmatureDataManager():addArmatureFileInfo(
+--		"baoshigonghui0.png",
+--		"baoshigonghui0.plist",
+--		"baoshigonghui.ExportJson"
+--	) --资源加载
+--	 local armature = CCArmature:create("baoshigonghui") --动画的名称
+--    armature:getAnimation():play("Animation1") --播放的标签
+----    armature:getAnimation():playByIndex(1);
+--    armature:setPosition(ccp(display.cx,display.cy))
+--    self:addChild(armature)
+    
+    
 end
 
-function MainScene:onTouch(event, x, y)
-    if event == "began" then
-        local p = CCPoint(x, y)
-        if self.addButtonBoundingBox:containsPoint(p) then
-            self.state = "ADD"
-        elseif self.removeButtonBoundingBox:containsPoint(p) then
-            self.state = "REMOVE"
-        else
-            self.state = "IDLE"
-        end
-        return true
-    elseif event ~= "moved" then
-        self.state = "IDLE"
-    end
-end
-
-function MainScene:addDragon()
-    local dragon = CCNodeExtend.extend(CCArmature:create("Dragon"))
-	dragon:connectMovementEventSignal(function(__evtType, __moveId)
-			echoInfo("movement, evtType: %d, moveId: %s", __evtType, __moveId)
-		end)
-    local animation = dragon:getAnimation()
-    animation:setAnimationScale(24 / 60) -- Flash fps is 24, cocos2d-x is 60
-	local aniName = "walk"--self.animationNames[math.random(1,4)]
-    animation:play(aniName)
-    dragon:setPosition(math.random(display.left, display.right), math.random(display.bottom, display.top))
-    dragon:setScale(math.random(50, 100) / 100)
-    self.layer:addChild(dragon)
-
-    self.dragons[#self.dragons + 1] = dragon
-    self.dragonsCount = #self.dragons
-    self.label:setString(string.format("%05d", self.dragonsCount))
-end
-
-function MainScene:removeDragon()
-    local dragon = self.dragons[self.dragonsCount]
-	dragon:disconnectMovementEventSignal()
-    dragon:removeSelf()
-    table.remove(self.dragons, self.dragonsCount)
-    self.dragonsCount = self.dragonsCount - 1
-    self.label:setString(string.format("%05d", self.dragonsCount))
-end
-
-function MainScene:onEnterFrame(dt)
-    if self.state == "ADD" then
-        self:addDragon()
-    elseif self.state == "REMOVE" and self.dragonsCount > 0 then
-        self:removeDragon()
-    end
-end
-
-function MainScene:onEnter()
-    self:scheduleUpdate(function(dt) self:onEnterFrame(dt) end)
-    self.layer:addTouchEventListener(function(event, x, y)
-        return self:onTouch(event, x, y)
-    end)
-    self.layer:setTouchEnabled(true)
-end
 
 return MainScene

@@ -1,0 +1,379 @@
+<skeleton name="shopEffect" frameRate="30" version="2.2">
+  <armatures>
+    <armature name="shopEffect">
+      <b name="下层02" x="2.83" y="-0.12" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0">
+        <d name="other-yuanqian01" pX="50" pY="50"/>
+      </b>
+      <b name="文字01" x="2.58" y="-0.77" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1">
+        <d name="other-ziyuan02" pX="0" pY="0"/>
+      </b>
+      <b name="布料" x="0" y="-165.45" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2">
+        <d name="other-buwen" pX="105.5" pY="74.5"/>
+      </b>
+      <b name="黄圈" x="2.17" y="0.35" kX="34.75" kY="34.75" cX="0.87" cY="0.87" pX="0" pY="0" z="3">
+        <d name="other-yuanqian02" pX="46.18" pY="55.08"/>
+      </b>
+      <b name="图层 2" x="2.17" y="0.35" kX="-49.97" kY="-49.97" cX="0.5" cY="0.5" pX="0" pY="0" z="4">
+        <d name="other-yuanqian03" pX="118.73" pY="55.08"/>
+      </b>
+      <b name="文字02" x="2.83" y="-1.15" kX="0" kY="0" cX="0.82" cY="0.82" pX="0" pY="0" z="2">
+        <d name="other-ziyuan01" pX="29" pY="15.75"/>
+        <d name="other-jianzhu01" pX="28" pY="14.75"/>
+        <d name="other-zhuangshi01" pX="28" pY="14.75"/>
+        <d name="other-fangdun01" pX="28" pY="14.75"/>
+        <d name="other-daoju01" pX="28" pY="14.75"/>
+      </b>
+    </armature>
+  </armatures>
+  <animations>
+    <animation name="shopEffect">
+      <mov name="ziyuan_open" dr="17" to="6" drTW="17" lp="0" twE="NaN">
+        <b name="下层02" sc="1" dl="0">
+          <f x="2.83" y="-0.12" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="17"/>
+        </b>
+        <b name="文字01" sc="1" dl="0">
+          <f x="2.58" y="-0.77" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="17"/>
+        </b>
+        <b name="布料" sc="1" dl="0">
+          <f dr="4" dI="-1"/>
+          <f x="0" y="-165.45" cocos2d_x="43" cocos2d_y="-107" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" twE="0" dr="8"/>
+          <f x="0" y="-45.95" cocos2d_x="43" cocos2d_y="13" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" dr="5"/>
+        </b>
+        <b name="黄圈" sc="1" dl="0">
+          <f dr="4" dI="-1"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="34.75" kY="34.75" cX="0.87" cY="0.87" pX="0" pY="0" z="3" dI="0" twE="0" dr="8"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1.02" cY="1.02" pX="0" pY="0" z="3" dI="0" twE="0" dr="4"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="1"/>
+        </b>
+        <b name="图层 2" sc="1" dl="0">
+          <f dr="4" dI="-1"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="-49.97" kY="-49.97" cX="0.5" cY="0.5" pX="0" pY="0" z="4" dI="0" twE="0" dr="8"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0.21" kY="0.21" cX="1.02" cY="1.02" pX="0" pY="0" z="4" dI="0" twE="0" dr="4"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" dr="1"/>
+        </b>
+        <b name="文字02" sc="1" dl="0">
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="0.82" cY="0.82" pX="0" pY="0" z="2" dI="0" twE="0" dr="4"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="5" dI="0" twE="0" dr="6"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="5" dI="0" dr="7"/>
+        </b>
+      </mov>
+      <mov name="ziyuan_close" dr="12" to="6" drTW="12" lp="0" twE="NaN">
+        <b name="下层02" sc="1" dl="0">
+          <f x="2.83" y="-0.12" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="128"/>
+        </b>
+        <b name="文字01" sc="1" dl="0">
+          <f x="2.58" y="-0.77" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="128"/>
+        </b>
+        <b name="布料" sc="1" dl="0">
+          <f x="0" y="-45.95" cocos2d_x="43" cocos2d_y="13" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" dr="2"/>
+          <f x="0" y="-45.95" cocos2d_x="43" cocos2d_y="13" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" twE="0" dr="9"/>
+          <f x="0" y="-165.45" cocos2d_x="43" cocos2d_y="-107" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" twE="0" dr="1"/>
+        </b>
+        <b name="黄圈" sc="1" dl="0">
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="2"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" twE="0" dr="6"/>
+          <f x="4.68" y="-0.62" cocos2d_x="5" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" twE="0" dr="3">
+            <colorTransform a="0" r="0" g="0" b="0" aM="5" rM="100" gM="100" bM="100"/>
+          </f>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" twE="0" dr="1">
+            <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+          </f>
+        </b>
+        <b name="图层 2" sc="1" dl="0">
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" dr="2"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" twE="0" dr="5"/>
+          <f x="2.2" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="-45.35" kY="-45.35" cX="0.26" cY="0.26" pX="0" pY="0" z="4" dI="0" twE="0" dr="4"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="-49.97" kY="-49.97" cX="0.18" cY="0.18" pX="0" pY="0" z="4" dI="0" dr="1">
+            <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+          </f>
+        </b>
+        <b name="文字02" sc="1" dl="0">
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="5" dI="0" dr="2"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="5" dI="0" twE="0" dr="6"/>
+          <f x="2.65" y="-0.97" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="0.87" cY="0.87" pX="0" pY="0" z="5" dI="0" twE="0" dr="3"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="0.82" cY="0.82" pX="0" pY="0" z="5" dI="0" twE="0" dr="1"/>
+        </b>
+      </mov>
+      <mov name="jianzhu_open" dr="17" to="6" drTW="17" lp="0" twE="NaN">
+        <b name="下层02" sc="1" dl="0">
+          <f x="2.83" y="-0.12" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="116"/>
+        </b>
+        <b name="文字01" sc="1" dl="0">
+          <f x="2.58" y="-0.77" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="116"/>
+        </b>
+        <b name="布料" sc="1" dl="0">
+          <f dr="4" dI="-1"/>
+          <f x="0" y="-165.45" cocos2d_x="43" cocos2d_y="-107" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" twE="0" dr="8"/>
+          <f x="0" y="-45.95" cocos2d_x="43" cocos2d_y="13" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" dr="5"/>
+        </b>
+        <b name="黄圈" sc="1" dl="0">
+          <f dr="4" dI="-1"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="34.75" kY="34.75" cX="0.87" cY="0.87" pX="0" pY="0" z="3" dI="0" twE="0" dr="8"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1.02" cY="1.02" pX="0" pY="0" z="3" dI="0" twE="0" dr="4"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="1"/>
+        </b>
+        <b name="图层 2" sc="1" dl="0">
+          <f dr="4" dI="-1"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="-49.97" kY="-49.97" cX="0.5" cY="0.5" pX="0" pY="0" z="4" dI="0" twE="0" dr="8"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0.21" kY="0.21" cX="1.02" cY="1.02" pX="0" pY="0" z="4" dI="0" twE="0" dr="4"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" dr="1"/>
+        </b>
+        <b name="文字02" sc="1" dl="0">
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="0.82" cY="0.82" pX="0" pY="0" z="2" dI="1" twE="0" dr="4"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="5" dI="1" twE="0" dr="6"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="5" dI="1" dr="7"/>
+        </b>
+      </mov>
+      <mov name="jianzhu_close" dr="12" to="6" drTW="12" lp="0" twE="NaN">
+        <b name="下层02" sc="1" dl="0">
+          <f x="2.83" y="-0.12" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="99"/>
+        </b>
+        <b name="文字01" sc="1" dl="0">
+          <f x="2.58" y="-0.77" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="99"/>
+        </b>
+        <b name="布料" sc="1" dl="0">
+          <f x="0" y="-45.95" cocos2d_x="43" cocos2d_y="13" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" dr="2"/>
+          <f x="0" y="-45.95" cocos2d_x="43" cocos2d_y="13" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" twE="0" dr="9"/>
+          <f x="0" y="-165.45" cocos2d_x="43" cocos2d_y="-107" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" twE="0" dr="1"/>
+        </b>
+        <b name="黄圈" sc="1" dl="0">
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="2"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" twE="0" dr="6"/>
+          <f x="4.68" y="-0.62" cocos2d_x="5" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" twE="0" dr="3">
+            <colorTransform a="0" r="0" g="0" b="0" aM="5" rM="100" gM="100" bM="100"/>
+          </f>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" twE="0" dr="1">
+            <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+          </f>
+        </b>
+        <b name="图层 2" sc="1" dl="0">
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" dr="2"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" twE="0" dr="5"/>
+          <f x="2.2" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="-45.35" kY="-45.35" cX="0.26" cY="0.26" pX="0" pY="0" z="4" dI="0" twE="0" dr="4"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="-49.97" kY="-49.97" cX="0.18" cY="0.18" pX="0" pY="0" z="4" dI="0" dr="1">
+            <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+          </f>
+        </b>
+        <b name="文字02" sc="1" dl="0">
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="5" dI="1" dr="2"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="5" dI="1" twE="0" dr="6"/>
+          <f x="2.65" y="-0.97" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="0.87" cY="0.87" pX="0" pY="0" z="5" dI="1" twE="0" dr="3"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="0.82" cY="0.82" pX="0" pY="0" z="5" dI="1" twE="0" dr="1"/>
+        </b>
+      </mov>
+      <mov name="zhuangsh_open" dr="17" to="6" drTW="17" lp="0" twE="NaN">
+        <b name="下层02" sc="1" dl="0">
+          <f x="2.83" y="-0.12" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="87"/>
+        </b>
+        <b name="文字01" sc="1" dl="0">
+          <f x="2.58" y="-0.77" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="87"/>
+        </b>
+        <b name="布料" sc="1" dl="0">
+          <f dr="4" dI="-1"/>
+          <f x="0" y="-165.45" cocos2d_x="43" cocos2d_y="-107" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" twE="0" dr="8"/>
+          <f x="0" y="-45.95" cocos2d_x="43" cocos2d_y="13" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" dr="5"/>
+        </b>
+        <b name="黄圈" sc="1" dl="0">
+          <f dr="4" dI="-1"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="34.75" kY="34.75" cX="0.87" cY="0.87" pX="0" pY="0" z="3" dI="0" twE="0" dr="8"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1.02" cY="1.02" pX="0" pY="0" z="3" dI="0" twE="0" dr="4"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="1"/>
+        </b>
+        <b name="图层 2" sc="1" dl="0">
+          <f dr="4" dI="-1"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="-49.97" kY="-49.97" cX="0.5" cY="0.5" pX="0" pY="0" z="4" dI="0" twE="0" dr="8"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0.21" kY="0.21" cX="1.02" cY="1.02" pX="0" pY="0" z="4" dI="0" twE="0" dr="4"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" dr="1"/>
+        </b>
+        <b name="文字02" sc="1" dl="0">
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="0.82" cY="0.82" pX="0" pY="0" z="2" dI="2" twE="0" dr="4"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="5" dI="2" twE="0" dr="6"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="5" dI="2" dr="7"/>
+        </b>
+      </mov>
+      <mov name="zhuangsh_close" dr="12" to="6" drTW="12" lp="0" twE="NaN">
+        <b name="下层02" sc="1" dl="0">
+          <f x="2.83" y="-0.12" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="70"/>
+        </b>
+        <b name="文字01" sc="1" dl="0">
+          <f x="2.58" y="-0.77" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="70"/>
+        </b>
+        <b name="布料" sc="1" dl="0">
+          <f x="0" y="-45.95" cocos2d_x="43" cocos2d_y="13" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" dr="2"/>
+          <f x="0" y="-45.95" cocos2d_x="43" cocos2d_y="13" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" twE="0" dr="9"/>
+          <f x="0" y="-165.45" cocos2d_x="43" cocos2d_y="-107" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" twE="0" dr="1"/>
+        </b>
+        <b name="黄圈" sc="1" dl="0">
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="2"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" twE="0" dr="6"/>
+          <f x="4.68" y="-0.62" cocos2d_x="5" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" twE="0" dr="3">
+            <colorTransform a="0" r="0" g="0" b="0" aM="5" rM="100" gM="100" bM="100"/>
+          </f>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" twE="0" dr="1">
+            <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+          </f>
+        </b>
+        <b name="图层 2" sc="1" dl="0">
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" dr="2"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" twE="0" dr="5"/>
+          <f x="2.2" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="-45.35" kY="-45.35" cX="0.26" cY="0.26" pX="0" pY="0" z="4" dI="0" twE="0" dr="4"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="-49.97" kY="-49.97" cX="0.18" cY="0.18" pX="0" pY="0" z="4" dI="0" dr="1">
+            <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+          </f>
+        </b>
+        <b name="文字02" sc="1" dl="0">
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="5" dI="2" dr="2"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="5" dI="2" twE="0" dr="6"/>
+          <f x="2.65" y="-0.97" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="0.87" cY="0.87" pX="0" pY="0" z="5" dI="2" twE="0" dr="3"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="0.82" cY="0.82" pX="0" pY="0" z="5" dI="2" twE="0" dr="1"/>
+        </b>
+      </mov>
+      <mov name="fangdun_open" dr="17" to="6" drTW="17" lp="0" twE="NaN">
+        <b name="下层02" sc="1" dl="0">
+          <f x="2.83" y="-0.12" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="58"/>
+        </b>
+        <b name="文字01" sc="1" dl="0">
+          <f x="2.58" y="-0.77" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="58"/>
+        </b>
+        <b name="布料" sc="1" dl="0">
+          <f dr="4" dI="-1"/>
+          <f x="0" y="-165.45" cocos2d_x="43" cocos2d_y="-107" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" twE="0" dr="8"/>
+          <f x="0" y="-45.95" cocos2d_x="43" cocos2d_y="13" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" dr="5"/>
+        </b>
+        <b name="黄圈" sc="1" dl="0">
+          <f dr="4" dI="-1"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="34.75" kY="34.75" cX="0.87" cY="0.87" pX="0" pY="0" z="3" dI="0" twE="0" dr="8"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1.02" cY="1.02" pX="0" pY="0" z="3" dI="0" twE="0" dr="4"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="1"/>
+        </b>
+        <b name="图层 2" sc="1" dl="0">
+          <f dr="4" dI="-1"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="-49.97" kY="-49.97" cX="0.5" cY="0.5" pX="0" pY="0" z="4" dI="0" twE="0" dr="8"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0.21" kY="0.21" cX="1.02" cY="1.02" pX="0" pY="0" z="4" dI="0" twE="0" dr="4"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" dr="1"/>
+        </b>
+        <b name="文字02" sc="1" dl="0">
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="0.82" cY="0.82" pX="0" pY="0" z="2" dI="3" twE="0" dr="4"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="5" dI="3" twE="0" dr="6"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="5" dI="3" dr="7"/>
+        </b>
+      </mov>
+      <mov name="fangdun_close" dr="12" to="6" drTW="12" lp="0" twE="NaN">
+        <b name="下层02" sc="1" dl="0">
+          <f x="2.83" y="-0.12" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="41"/>
+        </b>
+        <b name="文字01" sc="1" dl="0">
+          <f x="2.58" y="-0.77" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="41"/>
+        </b>
+        <b name="布料" sc="1" dl="0">
+          <f x="0" y="-45.95" cocos2d_x="43" cocos2d_y="13" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" dr="2"/>
+          <f x="0" y="-45.95" cocos2d_x="43" cocos2d_y="13" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" twE="0" dr="9"/>
+          <f x="0" y="-165.45" cocos2d_x="43" cocos2d_y="-107" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" twE="0" dr="1"/>
+        </b>
+        <b name="黄圈" sc="1" dl="0">
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="2"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" twE="0" dr="6"/>
+          <f x="4.68" y="-0.62" cocos2d_x="5" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" twE="0" dr="3">
+            <colorTransform a="0" r="0" g="0" b="0" aM="5" rM="100" gM="100" bM="100"/>
+          </f>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" twE="0" dr="1">
+            <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+          </f>
+        </b>
+        <b name="图层 2" sc="1" dl="0">
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" dr="2"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" twE="0" dr="5"/>
+          <f x="2.2" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="-45.35" kY="-45.35" cX="0.26" cY="0.26" pX="0" pY="0" z="4" dI="0" twE="0" dr="4"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="-49.97" kY="-49.97" cX="0.18" cY="0.18" pX="0" pY="0" z="4" dI="0" dr="1">
+            <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+          </f>
+        </b>
+        <b name="文字02" sc="1" dl="0">
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="5" dI="3" dr="2"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="5" dI="3" twE="0" dr="6"/>
+          <f x="2.65" y="-0.97" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="0.87" cY="0.87" pX="0" pY="0" z="5" dI="3" twE="0" dr="3"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="0.82" cY="0.82" pX="0" pY="0" z="5" dI="3" twE="0" dr="1"/>
+        </b>
+      </mov>
+      <mov name="daoju_open" dr="17" to="6" drTW="17" lp="0" twE="NaN">
+        <b name="下层02" sc="1" dl="0">
+          <f x="2.83" y="-0.12" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="29"/>
+        </b>
+        <b name="文字01" sc="1" dl="0">
+          <f x="2.58" y="-0.77" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="29"/>
+        </b>
+        <b name="布料" sc="1" dl="0">
+          <f dr="4" dI="-1"/>
+          <f x="0" y="-165.45" cocos2d_x="43" cocos2d_y="-107" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" twE="0" dr="8"/>
+          <f x="0" y="-45.95" cocos2d_x="43" cocos2d_y="13" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" dr="5"/>
+        </b>
+        <b name="黄圈" sc="1" dl="0">
+          <f dr="4" dI="-1"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="34.75" kY="34.75" cX="0.87" cY="0.87" pX="0" pY="0" z="3" dI="0" twE="0" dr="8"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1.02" cY="1.02" pX="0" pY="0" z="3" dI="0" twE="0" dr="4"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="1"/>
+        </b>
+        <b name="图层 2" sc="1" dl="0">
+          <f dr="4" dI="-1"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="-49.97" kY="-49.97" cX="0.5" cY="0.5" pX="0" pY="0" z="4" dI="0" twE="0" dr="8"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0.21" kY="0.21" cX="1.02" cY="1.02" pX="0" pY="0" z="4" dI="0" twE="0" dr="4"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" dr="1"/>
+        </b>
+        <b name="文字02" sc="1" dl="0">
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="0.82" cY="0.82" pX="0" pY="0" z="2" dI="4" twE="0" dr="4"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="0.8" cY="0.8" pX="0" pY="0" z="5" dI="4" twE="0" dr="6"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="5" dI="4" dr="7"/>
+        </b>
+      </mov>
+      <mov name="daoju_close" dr="12" to="6" drTW="12" lp="0" twE="NaN">
+        <b name="下层02" sc="1" dl="0">
+          <f x="2.83" y="-0.12" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="0" dI="0" dr="12"/>
+        </b>
+        <b name="文字01" sc="1" dl="0">
+          <f x="2.58" y="-0.77" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="1" dI="0" dr="12"/>
+        </b>
+        <b name="布料" sc="1" dl="0">
+          <f x="0" y="-45.95" cocos2d_x="43" cocos2d_y="13" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" dr="2"/>
+          <f x="0" y="-45.95" cocos2d_x="43" cocos2d_y="13" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" twE="0" dr="9"/>
+          <f x="0" y="-165.45" cocos2d_x="43" cocos2d_y="-107" kX="0" kY="0" cX="1" cY="1" pX="-42.5" pY="-57.97" z="2" dI="0" twE="0" dr="1"/>
+        </b>
+        <b name="黄圈" sc="1" dl="0">
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" dr="2"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" twE="0" dr="6"/>
+          <f x="4.68" y="-0.62" cocos2d_x="5" cocos2d_y="0" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" twE="0" dr="3">
+            <colorTransform a="0" r="0" g="0" b="0" aM="5" rM="100" gM="100" bM="100"/>
+          </f>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="3" dI="0" twE="0" dr="1">
+            <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+          </f>
+        </b>
+        <b name="图层 2" sc="1" dl="0">
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" dr="2"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="4" dI="0" twE="0" dr="5"/>
+          <f x="2.2" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="-45.35" kY="-45.35" cX="0.26" cY="0.26" pX="0" pY="0" z="4" dI="0" twE="0" dr="4"/>
+          <f x="2.17" y="0.35" cocos2d_x="3" cocos2d_y="1" kX="-49.97" kY="-49.97" cX="0.18" cY="0.18" pX="0" pY="0" z="4" dI="0" dr="1">
+            <colorTransform a="0" r="0" g="0" b="0" aM="0" rM="100" gM="100" bM="100"/>
+          </f>
+        </b>
+        <b name="文字02" sc="1" dl="0">
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="5" dI="4" dr="2"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="1" cY="1" pX="0" pY="0" z="5" dI="4" twE="0" dr="6"/>
+          <f x="2.65" y="-0.97" cocos2d_x="3" cocos2d_y="0" kX="0" kY="0" cX="0.87" cY="0.87" pX="0" pY="0" z="5" dI="4" twE="0" dr="3"/>
+          <f x="2.83" y="-1.15" cocos2d_x="3" cocos2d_y="-1" kX="0" kY="0" cX="0.82" cY="0.82" pX="0" pY="0" z="5" dI="4" twE="0" dr="1"/>
+        </b>
+      </mov>
+    </animation>
+  </animations>
+  <TextureAtlas name="shopEffect" width="512" height="512">
+    <SubTexture name="other-daoju01" width="56" height="30" cocos2d_pX="28" cocos2d_pY="15" x="260" y="151"/>
+    <SubTexture name="other-fangdun01" width="56" height="30" cocos2d_pX="28" cocos2d_pY="15" x="318" y="151"/>
+    <SubTexture name="other-zhuangshi01" width="56" height="30" cocos2d_pX="28" cocos2d_pY="15" x="434" y="151"/>
+    <SubTexture name="other-jianzhu01" width="56" height="30" cocos2d_pX="28" cocos2d_pY="15" x="376" y="151"/>
+    <SubTexture name="other-ziyuan01" width="58" height="32" cocos2d_pX="29" cocos2d_pY="16" x="200" y="151"/>
+    <SubTexture name="other-yuanqian03" width="244" height="129" cocos2d_pX="119" cocos2d_pY="56" x="0" y="0"/>
+    <SubTexture name="other-yuanqian02" width="96" height="129" cocos2d_pX="47" cocos2d_pY="56" x="0" y="131"/>
+    <SubTexture name="other-buwen" width="211" height="149" cocos2d_pX="106" cocos2d_pY="75" x="246" y="0"/>
+    <SubTexture name="other-ziyuan02" width="0" height="0" cocos2d_pX="0" cocos2d_pY="0" x="459" y="0"/>
+    <SubTexture name="other-yuanqian01" width="100" height="100" cocos2d_pX="50" cocos2d_pY="50" x="98" y="131"/>
+  </TextureAtlas>
+</skeleton>
