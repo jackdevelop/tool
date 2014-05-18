@@ -7,13 +7,13 @@ end)
 function MainScene:ctor()
 	
 	
-     
+	self:addChild(display.newSprite("map/map.png",display.cx,display.cy));
 	
-	--测试骨骼动画
---	local BaseDragonBone = require("app.base.BaseDragonBone");
+	--测试原始的骨骼动画
+--     	local BaseDragonBone = require("app.base.BaseDragonBone");
 --	local baseDragonBone = BaseDragonBone.new(nil,self);
 --	local param = {
---		dragonName = "ccs/dragon/shop/shopEffect", --swf名称
+--		dragonName = "ccs/dragon/dragon/Dragon", --swf名称
 --		fps = 24 , --帧数
 --	}
 --	local rect = nil;
@@ -23,11 +23,27 @@ function MainScene:ctor()
 --		print("点击了");
 --	end,rect)
 --	baseDragonBone:setPosition(display.cx,display.cy)
---	baseDragonBone:play("ziyuan_open") --播放的帧标签
+--	baseDragonBone:play("walk") --播放的帧标签
+
+
+
+	
+	--测试商店骨骼动画
+	local BaseDragonBone = require("app.base.BaseDragonBone");
+	local baseDragonBone = BaseDragonBone.new(nil,self);
+	local param = {
+		dragonName = "ccs/dragon/shop/shopEffect", --swf名称
+		fps = 24 , --帧数
+	}
+	local rect = nil;
+	baseDragonBone:initData(param);
+	baseDragonBone:initView();
+	baseDragonBone:registerEventScript(function()
+		print("点击了");
+	end,rect)
+	baseDragonBone:setPosition(display.cx,display.cy)
+	baseDragonBone:play("ziyuan_open") --播放的帧标签
 	 
-	
-	
-	
 	
 	
 	
@@ -56,11 +72,11 @@ function MainScene:ctor()
     
     	--测试动画宝石公会
 --	CCArmatureDataManager:sharedArmatureDataManager():addArmatureFileInfo(
---		"ccs/dragon/baoshihecheng/baoshihecheng0.png",
---		"ccs/dragon/baoshihecheng/baoshihecheng0.plist",
---		"ccs/dragon/baoshihecheng/baoshihecheng.ExportJson"
+--		"ccs/dragon/baoshihecheng/baoshigonghui0.png",
+--		"ccs/dragon/baoshihecheng/baoshigonghui0.plist",
+--		"ccs/dragon/baoshihecheng/baoshigonghui.ExportJson"
 --	) --资源加载
---	 local armature = CCArmature:create("baoshihecheng") --动画的名称
+--	 local armature = CCArmature:create("baoshigonghui") --动画的名称
 --    armature:getAnimation():play("Animation1") --播放的标签
 --    armature:setPosition(ccp(400,200))
 --    self:addChild(armature)
@@ -69,32 +85,43 @@ function MainScene:ctor()
     
     
     
-    
-    
-    --小晕的测试宝石公户
-    CCArmatureDataManager:sharedArmatureDataManager():addArmatureFileInfo(
-		"baoshihecheng0.png",
-		"baoshihecheng0.plist",
-		"baoshihecheng.ExportJson"
-	) --资源加载
-	 local armature = CCArmature:create("baoshihecheng") --动画的名称
-    armature:getAnimation():play("Animation1") --播放的标签
-    armature:setPosition(ccp(400,200))
-    self:addChild(armature)
-    
-    
-    
-    	--测试杨云的cocostuiod的动画
---	CCArmatureDataManager:sharedArmatureDataManager():addArmatureFileInfo(
---		"baoshigonghui0.png",
---		"baoshigonghui0.plist",
---		"baoshigonghui.ExportJson"
+        
+ --测试英雄培养
+--    CCArmatureDataManager:sharedArmatureDataManager():addArmatureFileInfo(
+--		"NewAnimation0.png",
+--		"NewAnimation0.plist",
+--		"NewAnimation.ExportJson"
 --	) --资源加载
---	 local armature = CCArmature:create("baoshigonghui") --动画的名称
+--	 local armature = CCArmature:create("NewAnimation") --动画的名称
+--    armature:getAnimation():play("Animation2") --播放的标签
+--    armature:setPosition(ccp(400,200))
+--    self:addChild(armature)
+
+
+
+
+
+
+
+
+
+    
+   
+--    --小晕的测试宝石公户
+--     local name = require("name");
+--    CCArmatureDataManager:sharedArmatureDataManager():addArmatureFileInfo(
+--		name.png ,
+--		name.plist,
+--		name.json 
+--	) --资源加载
+--	 local armature = CCArmature:create(name.name) --动画的名称
 --    armature:getAnimation():play("Animation1") --播放的标签
-----    armature:getAnimation():playByIndex(1);
 --    armature:setPosition(ccp(display.cx,display.cy))
 --    self:addChild(armature)
+--    armature:addChild(display.newNode());
+    
+    
+
     
     
 end

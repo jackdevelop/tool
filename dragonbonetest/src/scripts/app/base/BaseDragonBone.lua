@@ -51,13 +51,13 @@ end
 --初始化视图
 function BaseDragonBone:initView()
 	local currentName = string.split(self.dragonName_, "/");
-	local dragon = CCNodeExtend.extend(CCArmature:create(currentName[#currentName]))
+	local dragon = CCArmature:create(currentName[#currentName])
 --	local dragon = CCSpriteExtend.extend(CCArmature:create(currentName[#currentName]))
-	dragon:connectMovementEventSignal(function(__evtType, __moveId)
-		echoInfo("movement, evtType: %d, moveId: %s", __evtType, __moveId)
-	end)
+--	dragon:connectMovementEventSignal(function(__evtType, __moveId)
+--		echoInfo("movement, evtType: %d, moveId: %s", __evtType, __moveId)
+--	end)
     local animation = dragon:getAnimation()
-    animation:setAnimationScale(self.fps_ / 60) -- Flash fps is 24, cocos2d-x is 60
+--    animation:setAnimationScale(self.fps_ / 60) -- Flash fps is 24, cocos2d-x is 60
 	--local aniName = "stand" --"stand", "walk", "jump", "fall"
 --    animation:play(self.aniName_)
     --dragon:setPosition(0,0)
@@ -78,13 +78,21 @@ function BaseDragonBone:registerEventScript(listener,rect)
 		local size = dragon:getContentSize(); 
 		rect = CCRect(0, 0, size.width, size.height);
 	end
-	dragon:setCascadeBoundingBox(rect)
+--	dragon:setCascadeBoundingBox(rect)
 	dragon:setTouchEnabled(true) -- enable sprite touch
     dragon:addTouchEventListener(function(event, x, y, prevX, prevY)
+    	print("xxxxxxxxxxx");
     	if listener then
     		listener();
     	end
     end);
+--	dragon:setCascadeBoundingBox(rect)
+--	dragon:setTouchEnabled(true) -- enable sprite touch
+--    dragon:addTouchEventListener(function(event, x, y, prevX, prevY)
+--    	if listener then
+--    		listener();
+--    	end
+--    end);
 end
 
 
