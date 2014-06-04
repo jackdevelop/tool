@@ -256,8 +256,6 @@ end
 
 class() 的这种用法让我们可以在 C++ 对象基础上任意扩展行为。
 
-~
-
 既然是继承，自然就可以覆盖 C++ 对象的方法：
 
 ~~~ lua
@@ -392,8 +390,8 @@ app/
 app/classes/
 app/classes/MyClass.lua
 app/classes/MyClassBase.lua
-app/data/Data1.lua
-app/data/Data2.lua
+app/classes/data/Data1.lua
+app/classes/data/Data2.lua
 
 ~~~
 
@@ -1006,7 +1004,7 @@ end
 ]]
 function table.walk(t, fn)
     for k,v in pairs(t) do
-        fun(v, k)
+        fn(v, k)
     end
 end
 
@@ -1408,4 +1406,30 @@ function string.utf8len(input)
         cnt = cnt + 1
     end
     return cnt
+end
+
+--[[--
+
+将数值格式化为包含千分位分隔符的字符串
+
+~~~ lua
+
+print(string.formatnumberthousands(1924235))
+-- 输出 1,924,235
+
+~~~
+
+@param number num 数值
+
+@return string 格式化结果
+
+]]
+function string.formatnumberthousands(num)
+    local formatted = tostring(checknumber(num))
+    local k
+    while true do
+        formatted, k = string.gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
+        if k == 0 then break end
+    end
+    return formatted
 end
