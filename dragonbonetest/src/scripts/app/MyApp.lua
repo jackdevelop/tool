@@ -12,8 +12,9 @@ end
 
 function MyApp:run()
     CCFileUtils:sharedFileUtils():addSearchPath("res/")
-    display.addSpriteFramesWithFile("AllSprites.plist","AllSprites.png");
-    self:enterScene("MainScene")
+--    display.addSpriteFramesWithFile("AllSprites.plist","AllSprites.png");
+    self:enterScene("TestCCSScene")
+--    self:enterScene("MainScene")
 end
 
 return MyApp

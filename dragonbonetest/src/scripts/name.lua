@@ -1,10 +1,10 @@
 local name ={}
 
 
-name.name = "yingxiongpeiyang";
-name.png = "yingxiongpeiyang0.png";
-name.plist = "yingxiongpeiyang0.plist";
-name.json = "yingxiongpeiyang.ExportJson"
+name.name = "31100";
+name.png = "311000.png";
+name.plist = "311000.plist";
+name.json = "31100.ExportJson"
 
 
 
